@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Card from 'react-bootstrap/Card';
 function MenuCard(items) {
     const ListItems = (<ul>{items.props.map((item, i) =>
-        item.price ? <li key={i}>
-
-            <h3>{item.name}</h3>
-            <h4>{item.value}</h4>
-            <h4>{item.price}</h4>
-            <img src={item.image} alt={item.name}></img>
-        </li> :
-            <li key={i}><h3>{item.name}</h3>
-                <h4>{item.value}</h4>
-            </li>)}
+        <Card style={{ width: '18rem' }}>
+            <Card.Img variant="top" src="" />
+            <Card.Body>
+                <Card.Title><h2>{item.name}</h2></Card.Title>
+                <Card.Text><h3>{item.value}</h3>
+                </Card.Text>
+                <h3>{item.price}</h3>
+            </Card.Body>
+        </ Card>)}
 
     </ul>
     );
