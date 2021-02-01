@@ -17,11 +17,11 @@ function NavBar() {
                 <Navbar.Toggle />
                 <Navbar.Collapse className="justify-content-end">
                     <Nav activeKey={window.location.pathname}>
-                        <LinkContainer to="/signup">
-                            <Nav.Link>Signup</Nav.Link>
+                        <LinkContainer to="/AboutUs">
+                            <Nav.Link>Our Story</Nav.Link>
                         </LinkContainer>
-                        <LinkContainer to="/login">
-                            <Nav.Link>Login</Nav.Link>
+                        <LinkContainer to="/Menu">
+                            <Nav.Link>Our Menu</Nav.Link>
                         </LinkContainer>
                     </Nav>
                 </Navbar.Collapse>

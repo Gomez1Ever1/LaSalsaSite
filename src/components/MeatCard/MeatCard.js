@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 
 function ItemCard(meats) {
     const ListItems = (<ul>{meats.props.map((item, i) =>
@@ -17,7 +18,9 @@ function ItemCard(meats) {
     );
     return (
         <div>
-            {ListItems}
+            <Container fluid>
+                {ListItems}
+            </Container>
         </div>
     );
 };

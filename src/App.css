@@ -5,4 +5,7 @@
   align-items: 'center';
   margin: 'auto';
   font-family: "Lucida Console", "Courier New", monospace;
+};
+.NotFound {
+padding-top:100px;
 }

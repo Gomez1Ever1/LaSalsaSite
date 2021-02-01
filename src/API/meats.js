@@ -1,7 +1,7 @@
 const meats = [
     {
-        name: "Mo's Carne Asada",
-        value: "Mo's signature recipe for carne asada. Just enough Mojo Criollo and steak seasoning cooks this meat through with flavor without sacrficing the tenderness of the meat. Excellent choice on any of our menu items",
+        name: "Carne Asada",
+        value: "Our signature recipe for carne asada. Just enough marinade and steak seasoning cook the meat to a juicy and tender explosion of flavor. Excellent choice on any of our menu items",
         id: "m1"
     },
     {

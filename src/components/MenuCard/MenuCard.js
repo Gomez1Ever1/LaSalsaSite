@@ -1,22 +1,25 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-function MenuCard(items) {
-    const ListItems = (<ul>{items.props.map((item, i) =>
-        <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="" />
-            <Card.Body>
-                <Card.Title><h2>{item.name}</h2></Card.Title>
-                <Card.Text><h3>{item.value}</h3>
-                </Card.Text>
-                <h3>{item.price}</h3>
-            </Card.Body>
-        </ Card>)}
+import { Container, Row, Col } from 'react-bootstrap';
 
-    </ul>
-    );
+function MenuCard(items) {
     return (
         <div>
-            {ListItems}
+            <Container>
+                <Row className="justify-content-lg-center">{items.props.map((item, i) =>
+                    <Col lg={5} style={{ margin: '10px' }}><Card>
+                        <Card.Img variant="top" src="" />
+                        <Card.Body>
+                            <Card.Title><h2>{item.name}</h2></Card.Title>
+                            <Card.Text><h3>{item.value}</h3>
+                            </Card.Text>
+                            <h3>{item.price}</h3>
+                        </Card.Body>
+                    </ Card>
+                    </Col>)}
+
+                </Row>
+            </Container>
         </div>
     );
 }
