@@ -33,6 +33,13 @@ const menuItems = [
         id: "5",
         price: "",
         image: ""
+    },
+    {
+        name: "Quesadilla",
+        value: "Flour tortilla filled with a mix of cheddar and monterrey jack cheeses. Grilled to melted goodness, served with rice and beans.",
+        id: "6",
+        price: " Add Meat for $1.99.",
+        image: ""
     }
 ];
 export default menuItems;

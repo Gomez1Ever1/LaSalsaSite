@@ -1,27 +1,24 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import Card from 'react-bootstrap/Card';
 
-function ItemCard(meats) {
-    const ListItems = (<ul>{meats.props.map((item, i) =>
-        item.price ? <li key={i}>
-
-            <h3>{item.name}</h3>
-            <h4>{item.value}</h4>
-            <h4>{item.price}</h4>
-            <img src={item.image} alt={item.name}></img>
-        </li> :
-            <li key={i}><h3>{item.name}</h3>
-                <h4>{item.value}</h4>
-            </li>)}
-
-    </ul>
-    );
+export default function ItemCard(meats) {
     return (
         <div>
             <Container fluid>
-                {ListItems}
+                {meats.props.map((item, i) =>
+                    <Row>
+                        <Col style={{ margin: '10px' }}>
+                            <Card lg>
+                                <li key={i}><h3>{item.name}</h3>
+                                    <h4>{item.value}</h4>
+                                </li>
+                            </Card>
+
+                        </Col>
+                    </Row>)}
+
             </Container>
         </div>
     );
 };
-export default ItemCard;
