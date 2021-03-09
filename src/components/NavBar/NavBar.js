@@ -4,7 +4,6 @@ import Navbar from 'react-bootstrap/NavBar';
 import Nav from 'react-bootstrap/Nav';
 import Routes from '../../Routes/Routes';
 
-
 function NavBar() {
     return (
         <div className="App container py-3">

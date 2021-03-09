@@ -8,21 +8,41 @@ function Home() {
     return (
         <Container >
             <Jumbotron>
-                <div className="justify-content-center" >
-                    <h1>La Salsa Market</h1>
-                    <h2>Una Verdadera Fiesta de Sabor!</h2>
-                    <Image src={weCater} alt='weCater' fluid />
-                </div>
+                <Row className='justify-content-center'>
+                    <Image src={weCater} alt='catering' fluid />
+                </Row>
+                <Row className='justify-content-center'>
+                    <Col xs={12} lg={5}>
+                        <Image src={Accion4} alt='people4' fluid rounded />
+                    </Col>
+                    <Col xs={12} lg={5}>
+                        <h4>Serving the Central Coast for all of your catering needs! We feature a fully staffed truck with all of our menu items, plus a little more!</h4>
+                    </Col>
+                </Row>
             </Jumbotron>
-
-            <Jumbotron style={{ opacity: '0.8' }}>
-                <h3>Located on the corner of 3rd street in Shandon, California!</h3>
-            </Jumbotron>
-            <Jumbotron style={{ opacity: '0.8' }}>
-                <div className="justify-content-center">
-                    <h1>Open Monday through Friday</h1>
-                    <h2>9am to 9pm</h2>
-                </div>
+            <Col xs lg>
+                <Image src={lonchera} alt='Truck' fluid />
+            </Col>
+            <Jumbotron>
+                <Row className='justify-content-center'>
+                    <Col xs={12} lg={5}>
+                        <h4>Serving the Central Coast for all of your catering needs! We feature a fully staffed truck with all of our menu items, plus a little more!</h4>
+                    </Col>
+                    <Col xs={12} lg={5}>
+                        <Image src={Accion3} alt='people3' fluid rounded />
+                    </Col>
+                </Row>
+                <Row className='justify-content-center'>
+                    <Col xs={12} lg={5}>
+                        <Image src={Accion1} alt='people1' fluid rounded />
+                    </Col>
+                    <Col xs={12} lg={5}>
+                        <h1>Now stopping at:</h1>
+                        <li>
+                            Corner of South Riverside, on the way to Barney Schwartz Park.
+                    </li>
+                    </Col>
+                </Row>
             </Jumbotron>
         </Container>
     );
