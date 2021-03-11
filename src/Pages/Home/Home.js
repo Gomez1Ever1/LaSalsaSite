@@ -1,50 +1,45 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import Jumbotron from 'react-bootstrap/Jumbotron';
-import Image from 'react-bootstrap/Image';
-import weCater from '../../images/weCater.png';
+import { Tab, Row, Col, Nav } from 'react-bootstrap';
+import MeatCard from '../../components/MeatCard/MeatCard';
+import meats from '../../API/meats';
+import menuItems from '../../API/menuItems';
+import MenuCard from '../../components/MenuCard/MenuCard';
+
 
 function Home() {
     return (
-        <Container >
-            <Jumbotron>
-                <Row className='justify-content-center'>
-                    <Image src={weCater} alt='catering' fluid />
-                </Row>
-                <Row className='justify-content-center'>
-                    <Col xs={12} lg={5}>
-                        <Image src={Accion4} alt='people4' fluid rounded />
-                    </Col>
-                    <Col xs={12} lg={5}>
-                        <h4>Serving the Central Coast for all of your catering needs! We feature a fully staffed truck with all of our menu items, plus a little more!</h4>
-                    </Col>
-                </Row>
-            </Jumbotron>
-            <Col xs lg>
-                <Image src={lonchera} alt='Truck' fluid />
-            </Col>
-            <Jumbotron>
-                <Row className='justify-content-center'>
-                    <Col xs={12} lg={5}>
-                        <h4>Serving the Central Coast for all of your catering needs! We feature a fully staffed truck with all of our menu items, plus a little more!</h4>
-                    </Col>
-                    <Col xs={12} lg={5}>
-                        <Image src={Accion3} alt='people3' fluid rounded />
+        <Tab.Container defaultActiveKey='Menu' >
+
+            <Nav justify variant='tabs' className='flex-column' style={{ backgroundColor: 'white' }}>
+
+                <Row>
+                    <Col style={{ margin: '0' }}>
+                        <Nav.Item>
+                            <Nav.Link eventKey="Menu">Menu</Nav.Link>
+                        </Nav.Item>
+                    </ Col>
+                    <Col style={{ margin: '0' }}>
+                        <Nav.Item>
+                            <Nav.Link eventKey="Meats">Meats</Nav.Link>
+                        </Nav.Item>
                     </Col>
                 </Row>
-                <Row className='justify-content-center'>
-                    <Col xs={12} lg={5}>
-                        <Image src={Accion1} alt='people1' fluid rounded />
-                    </Col>
-                    <Col xs={12} lg={5}>
-                        <h1>Now stopping at:</h1>
-                        <li>
-                            Corner of South Riverside, on the way to Barney Schwartz Park.
-                    </li>
-                    </Col>
-                </Row>
-            </Jumbotron>
-        </Container>
+            </Nav>
+            <Row>
+
+                <Col>
+                    <Tab.Content>
+                        <Tab.Pane eventKey="Menu">
+                            <MenuCard props={menuItems} />
+                        </Tab.Pane>
+                        <Tab.Pane eventKey="Meats">
+                            <MeatCard props={meats} />
+                        </Tab.Pane>
+                    </Tab.Content>
+                </Col>
+            </Row>
+
+        </ Tab.Container >
     );
 };
 export default Home;

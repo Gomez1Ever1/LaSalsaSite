@@ -6,11 +6,11 @@ import Routes from '../../Routes/Routes';
 
 function NavBar() {
     return (
-        <div className="App container py-3">
-            <Navbar fixed="top" collapseOnSelect bg="dark" expand="md" className="mb-3" variant="dark">
+        <div className="py-3">
+            <Navbar fixed="top" collapseOnSelect bg="primary" expand="md" className="mb-3" variant="light">
                 <LinkContainer to='/'>
-                    <Navbar.Brand className="font-weight-bold text-muted" style={{ textColor: 'white' }}>
-                        La Salsa Market
+                    <Navbar.Brand className="font-weight-bold justify-content-center">
+                        Huatulco Tacos
               </Navbar.Brand>
                 </LinkContainer>
                 <Navbar.Toggle />
@@ -19,11 +19,11 @@ function NavBar() {
                         <LinkContainer to="/AboutUs">
                             <Nav.Link>Our Story</Nav.Link>
                         </LinkContainer>
-                        <LinkContainer to="/Menu">
+                        <LinkContainer to="/">
                             <Nav.Link>Our Menu</Nav.Link>
                         </LinkContainer>
-                        <LinkContainer to="/Huatulco">
-                            <Nav.Link>Huatulco Tacos</Nav.Link>
+                        <LinkContainer to="/LaSalsa">
+                            <Nav.Link>Our Base Store</Nav.Link>
                         </LinkContainer>
                     </Nav>
                 </Navbar.Collapse>

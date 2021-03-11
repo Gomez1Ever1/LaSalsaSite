@@ -2,10 +2,7 @@ import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 import Jumbotron from 'react-bootstrap/Jumbotron';
-import lonchera from '../../images/lonchera.jpg';
-import Accion1 from '../../images/Accion1.jpg'
-import Accion3 from '../../images/Accion3.jpg';
-import Accion4 from '../../images/Accion4.jpeg';
+
 import weCater from '../../images/weCater.png';
 
 function Huatulco() {
