@@ -14,7 +14,9 @@ export default function MenuCard(items) {
                                 <Card.Title><h2>{item.name}</h2></Card.Title>
                                 <Card.Text><h5>{item.value}</h5>
                                 </Card.Text>
-                                <h3>{item.price}</h3>
+                                <Card.Text><h3>{item.price}</h3></Card.Text>
+                                <Card.Text><h4>{item.extra}</h4></Card.Text>
+
                             </Card.Body>
                         </ Card>
                     </Col>)}
