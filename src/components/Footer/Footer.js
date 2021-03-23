@@ -5,8 +5,8 @@ import { Container } from 'react-bootstrap';
 export default function Footer() {
 
     return (
-        <div>
-            <Navbar bg='danger' fixed="sticky" variant='light'>
+        <div className="py-3">
+            <Navbar bg='danger' fixed="sticky" variant='light' >
                 <Container className="justify-content-center">
                     <Navbar.Brand>
                         <div>
