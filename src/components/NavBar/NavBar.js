@@ -6,7 +6,7 @@ import Routes from '../../Routes/Routes';
 function NavBar() {
     return (
         <div className="py-3">
-            <Navbar fixed="top" collapseOnSelect bg="primary" expand="md" className="mb-3" variant="light">
+            <Navbar fixed="top" collapseOnSelect bg="danger" expand="md" className="mb-3" variant="light">
                 <LinkContainer to='/'>
                     <Navbar.Brand className="font-weight-bold justify-content-center">
                         Huatulco Tacos
