@@ -8,38 +8,38 @@ import MenuCard from '../../components/MenuCard/MenuCard';
 
 function Home() {
     return (
-        <Tab.Container defaultActiveKey='Menu' >
-
-            <Nav justify variant='tabs' className='flex-column' style={{ backgroundColor: 'white' }}>
-
+        <div style={{ paddingTop: '10px' }}>
+            <Tab.Container defaultActiveKey='Menu'>
+                <Nav justify variant='tabs' className='flex-column' style={{ backgroundColor: 'white' }}>
+                    <Row>
+                        <Col>
+                            <Nav.Item>
+                                <Nav.Link eventKey="Menu"><h3>Menu</h3></Nav.Link>
+                            </Nav.Item>
+                        </ Col>
+                        <Col>
+                            <Nav.Item>
+                                <Nav.Link eventKey="Meats"><h3>Meats</h3></Nav.Link>
+                            </Nav.Item>
+                        </Col>
+                    </Row>
+                </Nav>
                 <Row>
-                    <Col style={{ margin: '0' }}>
-                        <Nav.Item>
-                            <Nav.Link eventKey="Menu"><h3>Menu</h3></Nav.Link>
-                        </Nav.Item>
-                    </ Col>
-                    <Col style={{ margin: '0' }}>
-                        <Nav.Item>
-                            <Nav.Link eventKey="Meats"><h3>Meats</h3></Nav.Link>
-                        </Nav.Item>
+                    <Col>
+                        <Tab.Content>
+                            <Tab.Pane eventKey="Menu">
+                                <MenuCard props={menuItems} />
+                            </Tab.Pane>
+                            <Tab.Pane eventKey="Meats">
+                                <MeatCard props={meats} />
+                            </Tab.Pane>
+                        </Tab.Content>
                     </Col>
                 </Row>
-            </Nav>
-            <Row>
 
-                <Col>
-                    <Tab.Content>
-                        <Tab.Pane eventKey="Menu">
-                            <MenuCard props={menuItems} />
-                        </Tab.Pane>
-                        <Tab.Pane eventKey="Meats">
-                            <MeatCard props={meats} />
-                        </Tab.Pane>
-                    </Tab.Content>
-                </Col>
-            </Row>
+            </ Tab.Container >
+        </div>
 
-        </ Tab.Container >
     );
 };
 export default Home;
