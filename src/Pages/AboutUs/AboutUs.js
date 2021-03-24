@@ -22,18 +22,19 @@ function AboutUs() {
                         <Image src={Accion4} alt='people4' fluid rounded />
                     </Col>
                 </Row>
+                <Col xs={12} lg={5}>
+                    <h1>Now stopping at:</h1>
+                    <li>
+                        Paso Robles Farmers Market. 9am to 1 pm.
+                    </li>
+                </Col>
             </Jumbotron>
             <Col xs lg>
                 <Image src={lonchera} alt='Truck' fluid />
             </Col>
             <Jumbotron>
                 <Row className='justify-content-center'>
-                    <Col xs={12} lg={5}>
-                        <h1>Now stopping at:</h1>
-                        <li>
-                            Paso Robles Farmers Market. 9am to 1 pm.
-                    </li>
-                    </Col>
+
                     <Col xs={12} lg={5}>
                         <h4>Serving the Central Coast for all of your catering needs! We feature a fully staffed truck with all of our menu items, plus a little more!</h4>
                     </Col>

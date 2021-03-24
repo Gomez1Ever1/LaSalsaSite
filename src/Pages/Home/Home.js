@@ -15,12 +15,12 @@ function Home() {
                 <Row>
                     <Col style={{ margin: '0' }}>
                         <Nav.Item>
-                            <Nav.Link eventKey="Menu">Menu</Nav.Link>
+                            <Nav.Link eventKey="Menu"><h3>Menu</h3></Nav.Link>
                         </Nav.Item>
                     </ Col>
                     <Col style={{ margin: '0' }}>
                         <Nav.Item>
-                            <Nav.Link eventKey="Meats">Meats</Nav.Link>
+                            <Nav.Link eventKey="Meats"><h3>Meats</h3></Nav.Link>
                         </Nav.Item>
                     </Col>
                 </Row>
