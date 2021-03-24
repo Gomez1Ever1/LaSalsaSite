@@ -6,7 +6,7 @@ export default function Footer() {
 
     return (
         <div>
-            <Navbar bg='danger' sticky="bottom" variant='light' >
+            <Navbar bg='dark' sticky="bottom" variant='dark' >
                 <Container className="justify-content-center">
                     <Navbar.Brand>
                         <div>

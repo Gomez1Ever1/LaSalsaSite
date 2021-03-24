@@ -29,6 +29,12 @@ function AboutUs() {
             <Jumbotron>
                 <Row className='justify-content-center'>
                     <Col xs={12} lg={5}>
+                        <h1>Now stopping at:</h1>
+                        <li>
+                            Paso Robles Farmers Market. 9am to 1 pm.
+                    </li>
+                    </Col>
+                    <Col xs={12} lg={5}>
                         <h4>Serving the Central Coast for all of your catering needs! We feature a fully staffed truck with all of our menu items, plus a little more!</h4>
                     </Col>
                     <Col xs={12} lg={5}>
@@ -38,12 +44,6 @@ function AboutUs() {
                 <Row className='justify-content-center'>
                     <Col xs={12} lg={5}>
                         <Image src={Accion1} alt='people1' fluid rounded />
-                    </Col>
-                    <Col xs={12} lg={5}>
-                        <h1>Now stopping at:</h1>
-                        <li>
-                            Corner of South Riverside, on the way to Barney Schwartz Park.
-                    </li>
                     </Col>
                 </Row>
             </Jumbotron>
