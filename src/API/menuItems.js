@@ -8,14 +8,14 @@ const menuItems = [
     },
     {
         name: "Torta",
-        value: "Homemade beans and salsa; Sour cream and cheese; Choice of meat; Fresh cilantro and onion; all served on a fresh Bolillo roll",
+        value: "Homemade beans and salsa; Sour cream and cheese; Choice of meat; Fresh cilantro, lettuce, tomato, and onion; all served on a fresh Bolillo roll",
         id: "3",
         price: "$11.99",
         extra: ""
     },
     {
         name: "Tostada",
-        value: "Homemade beans; Choice of Meat; Fresh Lettuce, Cilantro, and Onion; HomeMade Salsa; Sour cream and Cheese; Served on a deep fried tortilla",
+        value: "Homemade beans; Choice of meat; Fresh lettuce, cilantro, tomato, and onion; HomeMade salsa, sour cream and cheese; Served on a deep fried tortilla",
         id: "4",
         price: "$12.99",
         extra: ""
@@ -29,21 +29,21 @@ const menuItems = [
     },
     {
         name: "Loaded Nachos",
-        value: "Home cooked refried beans, cheese, Sour Cream, avocado, and salsa with your choice of meat; Tossed on a bed of our House chips.",
+        value: "Home cooked refried beans, cheese, sour cream, avocado, and salsa with your choice of meat; Tossed on a bed of our house chips.",
         id: "7",
         price: "$12.99",
         extra: ""
     },
     {
         name: "Quesadilla",
-        value: "Flour tortilla filled with a mix of cheddar and monterrey jack cheeses. Grilled to melted goodness, served with rice and beans.",
+        value: "Flour tortilla filled with a mix of cheddar and mozzarella cheeses with your choice of meat. Grilled to melted goodness, served with a side of salsa",
         id: "6",
-        price: "$10.99",
-        extra: "Make a combo or Add Meat for $1.99."
+        price: "$9.99",
+        extra: "Make a combo(rice and beans) - $3."
     },
     {
         name: "Burrito",
-        value: "Choice of meat; homemade rice, beans, and salsa; fresh cilantro and onion",
+        value: "Flour tortilla filled with choice of meat; homemade rice, beans, and salsa; fresh cilantro and onion",
         id: "1",
         price: "$11.99",
         extra: "Make it supreme for $1! Adds cheese, sour cream, tomato, and lettuce"

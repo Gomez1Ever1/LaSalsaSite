@@ -3,7 +3,7 @@ import React from 'react';
 import NavBar from './components/NavBar/NavBar';
 import './App.css';
 import Footer from './components/Footer/Footer';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import taco from './images/taco.jpeg';
 
 function App() {

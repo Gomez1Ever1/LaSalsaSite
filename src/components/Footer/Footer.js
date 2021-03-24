@@ -1,12 +1,12 @@
-import react from 'react';
+import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import { Container } from 'react-bootstrap';
 
 export default function Footer() {
 
     return (
-        <div className="py-3">
-            <Navbar bg='danger' fixed="sticky" variant='light' >
+        <div>
+            <Navbar bg='danger' sticky="bottom" variant='light' >
                 <Container className="justify-content-center">
                     <Navbar.Brand>
                         <div>
