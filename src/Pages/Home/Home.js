@@ -8,8 +8,8 @@ import MenuCard from '../../components/MenuCard/MenuCard';
 
 function Home() {
     return (
-        <div style={{ paddingTop: '10px' }}>
-            <Tab.Container defaultActiveKey='Menu'>
+        <div>
+            <Tab.Container defaultActiveKey='Menu' style={{ marginTop: '10px' }}>
                 <Nav justify variant='tabs' className='flex-column' style={{ backgroundColor: 'white' }}>
                     <Row>
                         <Col>
