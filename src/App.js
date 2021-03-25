@@ -9,8 +9,9 @@ import taco from './images/taco.jpeg';
 function App() {
   return (
     <div className="App" style={{ backgroundImage: `url(${taco})`, backgroundSize: 'cover', height: 'auto', width: 'auto' }}>
-      <NavBar />
+
       <Container>
+        <NavBar />
       </Container>
       <Footer />
     </div>
