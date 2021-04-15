@@ -1,9 +1,9 @@
 import React from 'react';
 import { Tab, Row, Col, Nav } from 'react-bootstrap';
-import MeatCard from '../../components/MeatCard/MeatCard';
+import MeatCard from '../../components/Cards/MeatCard';
 import meats from '../../API/meats';
 import menuItems from '../../API/menuItems';
-import MenuCard from '../../components/MenuCard/MenuCard';
+import MenuCard from '../../components/Cards/MenuCard';
 
 
 function Home() {

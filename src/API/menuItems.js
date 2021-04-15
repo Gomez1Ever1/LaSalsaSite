@@ -39,14 +39,14 @@ const menuItems = [
         value: "Flour tortilla filled with a mix of cheddar and mozzarella cheeses with your choice of meat. Grilled to melted goodness, served with a side of salsa",
         id: "6",
         price: "$9.99",
-        extra: "Make a combo(rice and beans) - $3."
+        extra: "Make a combo(rice and beans) - $3; or add meat for $2!"
     },
     {
         name: "Burrito",
         value: "Flour tortilla filled with choice of meat; homemade rice, beans, and salsa; fresh cilantro and onion",
         id: "1",
         price: "$11.99",
-        extra: "Make it supreme for $1! Adds cheese, sour cream, tomato, and lettuce"
+        extra: "Make it supreme for $2 more! Adds cheese, sour cream, tomato, and lettuce"
     }
 ];
 export default menuItems;
