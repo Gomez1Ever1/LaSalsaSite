@@ -11,7 +11,8 @@ export default function Footer() {
                     <Navbar.Brand>
                         <div>
                             <h3>Call Us Today!</h3>
-                            <h3>(805) 239-8930</h3>
+                            <h3>(805) 975-8021</h3>
+                            <p>	&#169; La Salsa Market LLC. We do not save, use, or sell any information. All rights reserved</p>
                         </div>
                     </Navbar.Brand>
                 </Container>

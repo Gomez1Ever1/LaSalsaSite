@@ -18,14 +18,14 @@ function AboutUs() {
                     <Image src={weCater} alt='catering' fluid />
                 </Row>
                 <Row className='justify-content-center'>
-                    <Col xs={12} lg={5}>
+                    <Col xs={12} lg={12}>
                         <Image src={Accion4} alt='people4' fluid rounded />
                     </Col>
                 </Row>
-                <Col xs={12} lg={5}>
+                <Col xs={12} lg={12}>
                     <h1>Now stopping at:</h1>
                     <li>
-                        Paso Robles Farmers Market. 9am to 1 pm.
+                        Paso Robles Farmers Market. Saturday, 9am to 1 pm.
                     </li>
                 </Col>
             </Jumbotron>
@@ -43,7 +43,7 @@ function AboutUs() {
                     </Col>
                 </Row>
                 <Row className='justify-content-center'>
-                    <Col xs={12} lg={5}>
+                    <Col xs={12} lg={12}>
                         <Image src={Accion1} alt='people1' fluid rounded />
                     </Col>
                 </Row>
@@ -53,9 +53,11 @@ function AboutUs() {
                     Humble Beginnings
                 </h1>
                 <Image src={Lonchera2} alt="lonchera" fluid />
-                <Jumbotron><p>"A taste of Oaxacan authenticity, right here on the Central Coast! We are committed to
-                providing the most quality products in our location, while staying true to the traditions and customs we have made claim to.
-               100% family run!"</p>
+                <Jumbotron><p>"A taste of Oaxacan authenticity, right here on the Central Coast!
+                100% family run, since ! We started as a small truck serving the then developing sub-urbs of Paso Robles. Eventually, we settled
+                down and purchased a small corner store in Shandon, California. From then and there, we continued to operate events and created a
+                culinary experience that is committed to
+                providing the most quality products, all in our truck, while staying true to the traditions and customs we have made claim to."</p>
                 </Jumbotron>
                 <Image src={Accion2} alt="accion" fluid />
             </div>

@@ -8,7 +8,7 @@ import MenuCard from '../../components/MenuCard/MenuCard';
 
 function Home() {
     return (
-        <Tab.Container defaultActiveKey='Menu' style={{}}>
+        <Tab.Container defaultActiveKey='Menu'>
             <Nav justify variant='tabs' className='flex-column' style={{ backgroundColor: 'white', marginTop: '50px' }}>
                 <Row>
                     <Col xs={6}>

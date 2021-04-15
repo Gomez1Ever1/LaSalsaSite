@@ -8,7 +8,7 @@ import weCater from '../../images/weCater.png';
 function Huatulco() {
     return (
         <Container>
-            <Jumbotron>
+            <Jumbotron lg={12} xs={12} >
                 <div className="justify-content-center" >
                     <h1>La Salsa Market</h1>
                     <h2>Una Verdadera Fiesta de Sabor!</h2>
@@ -16,7 +16,7 @@ function Huatulco() {
                 </div>
             </Jumbotron>
 
-            <Jumbotron style={{ opacity: '0.8' }}>
+            <Jumbotron lg={12} xs={12} style={{ opacity: '0.8' }}>
                 <div className="justify-content-center">
                     <h3>Located on the corner of 3rd street in Shandon, California!</h3>
                     <h1>Open Monday through Friday</h1>
