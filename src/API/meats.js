@@ -1,11 +1,11 @@
 const meats = [
     {
         name: "Carne Asada",
-        value: "Our signature recipe for carne asada. Just enough marinade and steak seasoning cook the meat to a juicy and tender explosion of flavor. Excellent choice on any of our menu items",
+        value: "Just enough marinade and steak seasoning cook the meat to a juicy and tender explosion of flavor. Excellent choice on any of our menu items",
         id: "m1"
     },
     {
-        name: "Adobada",
+        name: "House Pork",
         value: "Seasoned Pork cooked in a smoked chile paste marinade over grilled onions. A great choice in the burrito or torta.",
         id: "m2"
     },

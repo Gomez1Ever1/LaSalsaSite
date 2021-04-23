@@ -24,7 +24,7 @@ function AboutUs() {
                 </Row>
                 <Col xs={12} lg={12}>
                     <h1>Now stopping at:</h1>
-                    <li>
+                    <li key={1}>
                         Paso Robles Farmers Market. Saturday, 9am to 1 pm.
                     </li>
                 </Col>
@@ -54,7 +54,7 @@ function AboutUs() {
                 </h1>
                 <Image src={Lonchera2} alt="lonchera" fluid />
                 <Jumbotron><p>"A taste of Oaxacan authenticity, right here on the Central Coast!
-                100% family run, since ! We started as a small truck serving the then developing sub-urbs of Paso Robles. Eventually, we settled
+                100% family run, since '98! We started as a small truck serving the then developing sub-urbs of Paso Robles. Eventually, we settled
                 down and purchased a small corner store in Shandon, California. From then and there, we continued to operate events and created a
                 culinary experience that is committed to
                 providing the most quality products, all in our truck, while staying true to the traditions and customs we have made claim to."</p>

@@ -10,9 +10,10 @@ export default function ItemCard(meats) {
                     <Row>
                         <Col style={{ margin: '10px' }}>
                             <Card lg>
-                                <li key={i}><h3>{item.name}</h3>
+                                <div key={i}>
+                                    <h3>{item.name}</h3>
                                     <h4>{item.value}</h4>
-                                </li>
+                                </div>
                             </Card>
 
                         </Col>

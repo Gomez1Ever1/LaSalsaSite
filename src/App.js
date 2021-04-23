@@ -1,8 +1,8 @@
 
 import React from 'react';
-import NavBar from './components/NavBar/NavBar';
+import NavBar from './components/Navs/NavBar';
 import './App.css';
-import Footer from './components/Footer/Footer';
+import Footer from './components/Navs/Footer';
 import { Container } from 'react-bootstrap';
 import taco from './images/taco.jpeg';
 

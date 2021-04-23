@@ -22,10 +22,10 @@ const menuItems = [
     },
     {
         name: "Chips and Salsa",
-        value: "Home made deep fried tortilla triangles with our signature salsa and guacamole",
+        value: "Home made deep fried tortilla triangles with our signature salsa.",
         id: "5",
-        price: "$6",
-        extra: ""
+        price: "$5.99",
+        extra: "Add Guacamole $3"
     },
     {
         name: "Loaded Nachos",
@@ -38,8 +38,8 @@ const menuItems = [
         name: "Quesadilla",
         value: "Flour tortilla filled with a mix of cheddar and mozzarella cheeses with your choice of meat. Grilled to melted goodness, served with a side of salsa",
         id: "6",
-        price: "$9.99",
-        extra: "Make a combo(rice and beans) - $3; or add meat for $2!"
+        price: "$7.49",
+        extra: "Add meat for $2.50!"
     },
     {
         name: "Burrito",
