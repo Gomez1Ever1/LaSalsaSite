@@ -14,9 +14,9 @@ export default function MenuCard(items) {
                 </Jumbotron>
 
                 <Row className="justify-content-lg-center">{items.props.map((item, i) =>
+
                     <Col lg={5} style={{ margin: '10px' }} key={i}>
                         <Card>
-                            <Card.Img variant="top" src="" />
                             <Card.Body>
                                 <Card.Title><h2>{item.name}</h2></Card.Title>
                                 <Card.Text><p>{item.value}</p>

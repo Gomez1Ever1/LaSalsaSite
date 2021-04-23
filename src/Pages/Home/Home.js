@@ -1,9 +1,10 @@
 import React from 'react';
 import { Tab, Row, Col, Nav } from 'react-bootstrap';
-import MeatCard from '../../components/Cards/MeatCard';
+import MeatDrinkCard from '../../components/Cards/MeatDrinkCard';
 import meats from '../../API/meats';
 import menuItems from '../../API/menuItems';
-import MenuCard from '../../components/Cards/MenuCard';
+import drinks from '../../API/drinks';
+import MenuBreakfastCard from '../../components/Cards/MenuBreakfastCard';
 
 
 class Home extends React.Component {
@@ -19,12 +20,17 @@ class Home extends React.Component {
             <Tab.Container defaultActiveKey='Menu'>
                 <Nav justify variant='tabs' className='flex-column' style={{ backgroundColor: 'white', marginTop: '50px' }}>
                     <Row>
-                        <Col xs={6}>
+                        <Col xs={4}>
                             <Nav.Item>
                                 <Nav.Link eventKey="Menu"><h3>Menu</h3></Nav.Link>
                             </Nav.Item>
                         </ Col>
-                        <Col xs={6}>
+                        <Col xs={4}>
+                            <Nav.Item>
+                                <Nav.Link eventKey="Drinks"><h3>Drinks</h3></Nav.Link>
+                            </Nav.Item>
+                        </ Col>
+                        <Col xs={4}>
                             <Nav.Item>
                                 <Nav.Link eventKey="Meats"><h3>Meats</h3></Nav.Link>
                             </Nav.Item>
@@ -35,10 +41,13 @@ class Home extends React.Component {
                     <Col>
                         <Tab.Content>
                             <Tab.Pane eventKey="Menu">
-                                <MenuCard props={menuItems} />
+                                <MenuBreakfastCard props={menuItems} />
+                            </Tab.Pane>
+                            <Tab.Pane eventKey="Drinks">
+                                <MeatDrinkCard props={drinks} />
                             </Tab.Pane>
                             <Tab.Pane eventKey="Meats">
-                                <MeatCard props={meats} />
+                                <MeatDrinkCard props={meats} />
                             </Tab.Pane>
                         </Tab.Content>
                     </Col>

@@ -17,6 +17,12 @@ function AboutUs() {
                 <Row className='justify-content-center'>
                     <Image src={weCater} alt='catering' fluid />
                 </Row>
+                <Row>
+                    <Jumbotron className='justify-content-center'>
+                        <h3>Book an event!</h3>
+                        <h3>huatulcotacotruck@gmail.com</h3>
+                    </Jumbotron>
+                </Row>
                 <Row className='justify-content-center'>
                     <Col xs={12} lg={12}>
                         <Image src={Accion4} alt='people4' fluid rounded />
