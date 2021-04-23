@@ -36,7 +36,7 @@ const menuItems = [
     },
     {
         name: "Quesadilla",
-        value: "Flour tortilla filled with a mix of cheddar and mozzarella cheeses with your choice of meat. Grilled to melted goodness, served with a side of salsa",
+        value: "Flour tortilla filled with a mix of cheddar and mozzarella cheeses. Grilled to melted goodness, served with a side of salsa",
         id: "6",
         price: "$7.49",
         extra: "Add meat for $2.50!"

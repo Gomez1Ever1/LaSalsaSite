@@ -9,7 +9,8 @@ export default function MenuCard(items) {
             <Container className="justify-content-lg-center">
 
                 <Jumbotron style={{ marginBottom: 0 }} >
-                    <h4>Make any item a combo(sides of rice and beans) for $!3</h4>
+                    <h5>All items come with chips and salsa</h5>
+                    <h5>Make any item a combo(sides of rice and beans) for $3!</h5>
                 </Jumbotron>
 
                 <Row className="justify-content-lg-center">{items.props.map((item, i) =>
