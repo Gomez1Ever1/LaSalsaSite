@@ -11,7 +11,7 @@ export default function Footer() {
                 <Container className="justify-content-center">
                     <Navbar.Brand>
                         <div style={{ margin: 0, padding: 0 }}>
-                            <p style={{ fontSize: 17 }}>huatulcotacotrucks@gmail.com</p>
+                            <p style={{ fontSize: 17 }}>huatulcotacotruck@gmail.com</p>
                             <h3>(805) 975-8021</h3>
                             <p style={{ fontSize: 10 }}>&#169;La Salsa Market. All rights reserved.</p>
                             <p style={{ fontSize: 10 }}>We do not save, use, or sell any information.</p>
