@@ -12,7 +12,7 @@ import Lonchera2 from '../../images/Lonchera2.jpeg';
 
 function AboutUs() {
     return (
-        <Container className='justify-content-center'>
+        <Container>
             <Jumbotron>
                 <Row className='justify-content-center'>
                     <Image src={weCater} alt='catering' fluid />

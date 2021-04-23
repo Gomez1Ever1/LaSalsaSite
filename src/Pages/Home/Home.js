@@ -11,30 +11,42 @@ class Home extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            day: new Date().getDay()
+            saturday: this.isSaturday()
         };
     };
+    isSaturday() {
+        var day = new Date().getDay();
+        if (day === 6) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    };
     render() {
-        console.log(this.state.day);
+        console.log(this.state.saturday);
+        const Saturday = this.state.saturday;
         return (
             <Tab.Container defaultActiveKey='Menu'>
-                <Nav justify variant='tabs' className='flex-column' style={{ backgroundColor: 'white', marginTop: '50px' }}>
+                <Nav justify variant='tabs' className='flex-column justify-content-center' style={{ backgroundColor: 'white', marginTop: '50px' }}>
                     <Row>
                         <Col xs={4}>
                             <Nav.Item>
-                                <Nav.Link eventKey="Menu"><h3>Menu</h3></Nav.Link>
+                                <Nav.Link eventKey="Menu"><p>Menu</p></Nav.Link>
                             </Nav.Item>
                         </ Col>
                         <Col xs={4}>
                             <Nav.Item>
-                                <Nav.Link eventKey="Drinks"><h3>Drinks</h3></Nav.Link>
+                                <Nav.Link eventKey="Drinks"><p>Drinks</p></Nav.Link>
                             </Nav.Item>
                         </ Col>
+
                         <Col xs={4}>
                             <Nav.Item>
-                                <Nav.Link eventKey="Meats"><h3>Meats</h3></Nav.Link>
+                                <Nav.Link eventKey="Meats"><p>Meats</p></Nav.Link>
                             </Nav.Item>
                         </Col>
+
                     </Row>
                 </Nav>
                 <Row>
