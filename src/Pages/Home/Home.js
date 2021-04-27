@@ -4,7 +4,7 @@ import MeatDrinkCard from '../../components/Cards/MeatDrinkCard';
 import meats from '../../API/meats';
 import menuItems from '../../API/menuItems';
 import drinks from '../../API/drinks';
-import MenuBreakfastCard from '../../components/Cards/MenuBreakfastCard';
+import MenuCard from '../../components/Cards/MenuCard';
 
 
 class Home extends React.Component {
@@ -24,36 +24,29 @@ class Home extends React.Component {
         }
     };
     render() {
-        console.log(this.state.saturday);
         const Saturday = this.state.saturday;
         return (
-            <Tab.Container defaultActiveKey='Menu'>
-                <Nav justify variant='tabs' className='flex-column justify-content-center' style={{ backgroundColor: 'white', marginTop: '50px' }}>
-                    <Row>
-                        <Col xs={4}>
-                            <Nav.Item>
-                                <Nav.Link eventKey="Menu"><p>Menu</p></Nav.Link>
-                            </Nav.Item>
-                        </ Col>
-                        <Col xs={4}>
-                            <Nav.Item>
-                                <Nav.Link eventKey="Drinks"><p>Drinks</p></Nav.Link>
-                            </Nav.Item>
-                        </ Col>
+            <Tab.Container defaultActiveKey='Menu' className=' justify-content-center'>
+                <Nav fill variant='tabs' className='flex-column' className=' justify-content-center' style={{ backgroundColor: 'white', marginTop: '50px' }}>
 
-                        <Col xs={4}>
-                            <Nav.Item>
-                                <Nav.Link eventKey="Meats"><p>Meats</p></Nav.Link>
-                            </Nav.Item>
-                        </Col>
+                    <Nav.Item>
+                        <Nav.Link eventKey="Menu"><p>Menu</p></Nav.Link>
+                    </Nav.Item>
 
-                    </Row>
+                    <Nav.Item>
+                        <Nav.Link eventKey="Drinks"><p>Drinks</p></Nav.Link>
+                    </Nav.Item>
+
+                    <Nav.Item>
+                        <Nav.Link eventKey="Meats"><p>Meats</p></Nav.Link>
+                    </Nav.Item>
+
                 </Nav>
-                <Row>
+                <Row className=' justify-content-center'>
                     <Col>
                         <Tab.Content>
                             <Tab.Pane eventKey="Menu">
-                                <MenuBreakfastCard props={menuItems} />
+                                <MenuCard props={menuItems} />
                             </Tab.Pane>
                             <Tab.Pane eventKey="Drinks">
                                 <MeatDrinkCard props={drinks} />

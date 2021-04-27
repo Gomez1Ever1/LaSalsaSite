@@ -5,7 +5,7 @@ const meats = [
         id: "m1"
     },
     {
-        name: "House Pork",
+        name: "House Pastor",
         value: "Seasoned Pork cooked in a smoked chile paste marinade over grilled onions. A great choice in the burrito or torta.",
         id: "m2"
     },
