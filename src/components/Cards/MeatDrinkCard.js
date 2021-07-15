@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card';
 export default function ItemCard(meats) {
     return (
         <div>
-            <Container fluid>
+            <Container fluid className="justify-content-center">
                 {meats.props.map((item, i) =>
 
                     <Col lg={12} xs={12} style={{ margin: '10px' }} key={i}>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tab, Row, Col, Nav } from 'react-bootstrap';
+import { Tab, Row, Col, Nav, Button, Alert } from 'react-bootstrap';
 import MeatDrinkCard from '../../components/Cards/MeatDrinkCard';
 import meats from '../../API/meats';
 import menuItems from '../../API/menuItems';
@@ -8,23 +8,8 @@ import MenuCard from '../../components/Cards/MenuCard';
 
 
 class Home extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            saturday: this.isSaturday()
-        };
-    };
-    isSaturday() {
-        var day = new Date().getDay();
-        if (day === 6) {
-            return true;
-        }
-        else {
-            return false;
-        }
-    };
+
     render() {
-        const Saturday = this.state.saturday;
         return (
             <Tab.Container defaultActiveKey='Menu' className=' justify-content-center'>
                 <Nav fill variant='tabs' className='flex-column' className=' justify-content-center' style={{ backgroundColor: 'white', marginTop: '50px' }}>
@@ -40,7 +25,6 @@ class Home extends React.Component {
                     <Nav.Item>
                         <Nav.Link eventKey="Meats"><p>Meats</p></Nav.Link>
                     </Nav.Item>
-
                 </Nav>
                 <Row className=' justify-content-center'>
                     <Col>
