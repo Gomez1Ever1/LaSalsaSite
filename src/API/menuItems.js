@@ -1,4 +1,6 @@
-const menuItems = [
+const menuItems = 
+//API of menu items, prices, description, and extras
+[
     {
         name: "Tacos!",
         value: "Choice of meat; fresh cilantro, salsa, and onion",
@@ -42,11 +44,18 @@ const menuItems = [
         extra: "Add meat for $2.50!"
     },
     {
-        name: "Burrito",
+        name: "Super Burrito",
         value: "Flour tortilla filled with choice of meat; homemade rice, beans, and salsa; fresh cilantro and onion",
         id: "1",
         price: "$12.99",
         extra: "Make it supreme for $2 more! Adds cheese, sour cream, tomato, and lettuce"
+    },
+    {
+        name: "Bean Burrito",
+        value: "Flour tortilla filled with refried pintos and choice of house rice and mexican mix cheese.",
+        id: "1",
+        price: "$8.99",
+        extra: "Add cheese for $2 more!"
     }
 ];
 export default menuItems;
