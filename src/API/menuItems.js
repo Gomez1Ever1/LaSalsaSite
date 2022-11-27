@@ -53,7 +53,7 @@ const menuItems =
     {
         name: "Bean Burrito",
         value: "Flour tortilla filled with refried pintos and choice of house rice and mexican mix cheese.",
-        id: "1",
+        id: "8",
         price: "$8.99",
         extra: "Add cheese for $2 more!"
     }
