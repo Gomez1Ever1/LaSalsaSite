@@ -1,7 +1,9 @@
-const meats = [
+const meats = 
+//API of meats, description
+[
     {
         name: "Carne Asada",
-        value: "Just enough marinade and steak seasoning cook the meat to a juicy and tender explosion of flavor. Excellent choice on any of our menu items",
+        value: "With just enough marinade and steak seasoning to cook the meat to a juicy and tender explosion of flavor. Excellent choice on any of our menu items",
         id: "m1"
     },
     {
@@ -10,19 +12,14 @@ const meats = [
         id: "m2"
     },
     {
-        name: "Cabeza",
-        value: "Tender Beef head cooked in a savory broth, grilled to perfection. An excellent choice on the tacos!",
+        name: "Grilled Chicken",
+        value: "A classic grilled chicken recipe, sliced into slivers. A favorite in the burrito or torta.",
         id: "m3"
     },
     {
-        name: "Grilled Chicken",
-        value: "A classic grilled chicken recipe, sliced into slivers. A favorite in the burrito or torta.",
+        name: "Pork Chile Verde",
+        value: "Marinated pork, braised until tender in a tomatillo sauce. The chef recommends it in Burritos specifically, very saucy!",
         id: "m4"
-    },
-    {
-        name: "Carnitas",
-        value: "Marinated pork, braised until tender. The chef recommends it in Burritos, Tacos, or Tortas",
-        id: "m5"
     }
 ];
 export default meats;
