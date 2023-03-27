@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 
 export default function MenuCard(items) {
+    //loops through menu items and populates card with item name, description, prices, mods
     return (
         <div>
             <Container className="justify-content-lg-center">

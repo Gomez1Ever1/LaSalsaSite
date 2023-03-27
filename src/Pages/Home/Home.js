@@ -8,11 +8,13 @@ import MenuCard from '../../components/Cards/MenuCard';
 
 
 class Home extends React.Component {
-
+//Renders a nabar with the menu options as well as descriptors and prices
+//**currently experiencing issues with the drink card, possibly related to size of API? lack of descriptor(bulk text) */
+//issue manifests itself in the form of a card that does not follow the standard sizes, rather shrinks down menu as well as component itself
     render() {
         return (
-            <Tab.Container defaultActiveKey='Menu' className=' justify-content-center'>
-                <Nav fill variant='tabs' className='flex-column' className=' justify-content-center' style={{ backgroundColor: 'white', marginTop: '50px' }}>
+            <Tab.Container defaultActiveKey='Drinks' className='flex-column, justify-content-lg-center'>
+                <Nav fill variant='tabs' className='flex-column, justify-content-lg-center' style={{ backgroundColor: 'white', marginTop: '50px' }}>
 
                     <Nav.Item>
                         <Nav.Link eventKey="Menu"><p>Menu</p></Nav.Link>
@@ -26,7 +28,7 @@ class Home extends React.Component {
                         <Nav.Link eventKey="Meats"><p>Meats</p></Nav.Link>
                     </Nav.Item>
                 </Nav>
-                <Row className=' justify-content-center'>
+                <Row className='flex-column, justify-content-lg-center'>
                     <Col>
                         <Tab.Content>
                             <Tab.Pane eventKey="Menu">
