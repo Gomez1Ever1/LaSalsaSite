@@ -1,12 +1,14 @@
 const menuItems = 
 //API of menu items, prices, description, and extras
+//All menu items follow the same format with the progrqammers description of food items at their won discretion
+
 [
     {
         name: "Tacos!",
         value: "Choice of meat; fresh cilantro, salsa, and onion",
         id: "2",
         price: "$3.50",
-        extra: "Order of 3 for $10!"
+        extra: ""
     },
     {
         name: "Torta",
