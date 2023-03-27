@@ -13,7 +13,7 @@ class Home extends React.Component {
 //issue manifests itself in the form of a card that does not follow the standard sizes, rather shrinks down menu as well as component itself
     render() {
         return (
-            <Tab.Container defaultActiveKey='Drinks' className='flex-column, justify-content-lg-center'>
+            <Tab.Container defaultActiveKey='Menu' className='flex-column, justify-content-lg-center'>
                 <Nav fill variant='tabs' className='flex-column, justify-content-lg-center' style={{ backgroundColor: 'white', marginTop: '50px' }}>
 
                     <Nav.Item>
